@@ -1,0 +1,337 @@
+@font-face {
+    font-family: Azonix;
+    src: url("../Azonix.otf") format("opentype");
+}
+
+html {
+	background-image: url("../images/bats.gif");	
+}
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color:#D5E5F2;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* styles for header */
+header {
+    background-color: #D5E5F2;
+    padding: 4em;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+
+header h1 {
+    text-align: center;
+    color: #204473;
+    font-family: Azonix;
+}
+
+/* the styles for the navigation menu */
+#nav_menu {
+    background-color:#204473;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 20%;                 /* 160 / 800 x 100 */
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color:#204473;
+    color:#D5E5F2;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#mobile_menu {
+	display: none;
+}
+
+/* styles for main */
+main {
+    background-color:#D5E5F2;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.column:nth-child(1) p {
+    font-size: 1.5em;
+}
+
+.column:nth-child(2) {
+    margin-top: 2%;
+    
+}
+
+.desc {
+    margin-left: 2%;
+    width: 75%;
+}
+
+.desc-p {
+    font-size: 2em;
+}
+
+.paragraphs {
+    color: #4E7DA6;
+    font-weight: bold;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1em;
+}
+
+.video video {
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.column h1 {
+    color: #204473;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+hr {
+    width: 50%;
+    border: 2px solid #204473;
+}
+
+
+
+/* styles for section */
+section {
+    float: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2em;
+}
+
+.item .clrlft {
+    clear: left;
+}
+
+.heading {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:  #204473;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.item {
+    margin-top: 1em;
+    border-top: 5px solid #204473;
+    padding: 10px;
+    font-size: .85em;
+}
+
+
+.item p {
+    margin-bottom: 5px;
+}
+
+.item img {
+    width: 250px;
+    height: 250px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.item .description {
+    line-height: 16pt;
+    text-align: justify;
+}
+
+/* styles for footer */
+footer {
+    background-color: #204473;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer h3 {
+    padding: 1em;
+}
+
+/* FORM STYLES */
+#radioBtn {
+    margin-right: 10%;
+}
+
+button {
+    background: #204473 !important;
+    width: 100%;
+    padding: 2% !important;
+}
+
+#reservation-main {
+    background-color: #A0BED9;
+    
+}
+
+#reservation-footer h3 {
+    font-size: 1.5em;
+}
+
+.c-info {
+ margin-bottom: 1% !important;   
+}
+
+/* Extra Small and Small devices (phones, 576px and up) */
+@media (max-width: 767.98px) {
+
+#mobile_menu {
+    display: block;
+}
+
+.slicknav_menu {
+    background-color:#204473 !important;
+}
+
+.slicknav_btn {
+    background-color: white !important;
+}
+
+.slicknav_menu .slicknav_menutxt {
+    color: black !important;
+    text-shadow: none !important;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+	background-color:black !important;
+}
+
+#nav_menu {
+    display: none;    
+}
+
+.item {
+    max-width: 100%;
+}
+
+
+.column {
+    float: none;
+    width: 100%;
+}
+
+
+
+hr {
+    width: 75%;
+    border: 1px solid #204473;
+}
+
+.video video {
+    float: right;
+}
+
+
+
+@media (min-width: 200px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) and (max-width: 991.98px) {
+	#mobile_menu {
+        display: block;
+    }
+    
+    .slicknav_menu {
+        background-color: #204473 !important;
+    }
+
+    .slicknav_btn {
+        background-color: #A0BED9 !important;
+    }
+
+    .slicknav_menu .slicknav_menutxt {
+        color: black !important;
+        text-shadow: none !important;
+    }
+
+    .slicknav_menu .slicknav_icon-bar {
+        background-color:black !important;
+    }
+
+	
+	#nav_menu {
+		display: none;    
+    }
+    
+    .item {
+        max-width: 100%;
+    }
+
+    main p {
+        margin-left: 2%;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .column h1 {
+        margin-left: 2%;
+    }
+
+    .desc {
+        margin-left: 2%;   
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
