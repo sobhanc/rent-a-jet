@@ -1,0 +1,223 @@
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: white;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+ 
+ /** ==============================
+			   NAV STYLES
+	 ==============================
+ **/
+ 
+ 
+.navbar{
+	 z-index: 10;
+	 background-color: rgba(000,000,000,0.5);
+ }
+ .my-nav .nav-link{
+	 color: white;
+ }
+ .my-nav .navbar-brand{
+	 color: white;
+ }
+ .navbar-toggler-icon{
+	 color: white;
+ }
+ 
+ /** ==============================
+			 HEADER STYLES
+	 ==============================
+ **/
+ 
+ #header-btn {
+	 margin: auto;
+
+ }
+ 
+ .video-header{
+	 height: 100vh;
+	 display: flex;
+	 align-items: center;
+	 color: white;
+	 
+ }
+ 
+ .wrap{
+	 max-width: 960px;
+	 padding-left: 1rem;
+	 padding-right: 1rem;
+	 margin:auto;
+	 text-align: center;
+ }
+ .fullscreen-video-wrap{
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 height: 100vh;
+	 width: 100%;
+	 overflow: hidden;
+ }
+ .fullscreen-video-wrap video{
+	 min-height: 100%;
+	 min-width: 100%;
+ }
+ 
+ .header-overlay{
+	 height: 100vh;
+	 width: 100vw;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 background: rgba(34,33,33,0.7);
+	 opacity: 1;
+ }
+ 
+ .header-content{
+	 z-index: 2;
+	 margin-top: 20%;
+	 padding: 0 5rem;
+ }
+ 
+ .header-content h1{
+	 font-size: 5rem;
+	 margin-bottom: 0;
+	 font-family: 'Calligraffitti', cursive;
+	 
+ }
+ .header-content p{
+	 font-size: 1.5rem;
+	 display: block;
+	 margin-top: 10px;
+ }
+ 
+ 
+ @media(max-width:768px){
+	 .header-content h1{
+		 font-size: 40px;
+		 margin-top: 80%;
+	 }
+	 .header-content p{
+		 font-size: 1rem;
+	 }
+ }
+ 
+ /** ==============================
+		 FIRST SECTION STYLES
+	 ==============================
+ **/
+ 
+
+#products h1 {
+	text-align: center;
+	
+}
+
+.grid {
+	margin-top: 3em;
+	margin-left: 3.7em;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+
+}
+
+.card {
+    transform-style: preserve-3d;
+    width: 25rem;
+    border-radius: 30px;
+    padding: 0rem 1rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sneaker img {
+    width: 20rem;
+}
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(to right, gray , #53F5F2);
+}
+
+.info h1 {
+    font-size: 2rem;
+}
+
+.info h3 {
+    font-size: 1rem;
+    padding: 2rem 0rem;
+    color: #585858;
+}
+
+
+
+button.active {
+    background: #585858;
+    color: white;
+}
+
+.purchase {
+    margin-bottom: 2rem;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #53F5F2;
+    border: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    
+}
+
+
+ 
+ /** ==============================
+			 FOOTER STYLES
+	 ==============================
+ **/
+ 
+ footer {
+    font-family: 'Libre Franklin', sans-serif;
+    background: #000000;
+    color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    letter-spacing: 1px;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
